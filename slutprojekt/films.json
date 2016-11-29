@@ -2,9 +2,14 @@
 	"movieInfo":
 	[
 		{
-			"fimTitle": "Guardians",
+			"filmTitle": "Guardians",
 			"releaseDate": "February 23, 2017",
 			"synopsis": "During the Cold War, an organization called \"Patriot\" created a super-hero squad, which includes members of multiple soviet republics. For years, the heroes had to hide their identities, but in hard times they must show themselves again."
+		},
+		{
+			"filmTitle": "Wonder Woman",
+			"releaseDate": "June 2nd, 2017",
+			"synopsis": "The story will explore the character’s origin, tracking the immortal Princess Diana’s rise as a warrior on the mythic island of Themyscira – and her eventual quest beyond its boundaries to the realm of ordinary men, where she will fight for this outside world amid the backdrop of World War I. Hints of the movie are foreshadowed in Batman v Superman, and the Wonder Woman film will include a modern framing story set after the events of that clash of heroes, according to producer Charles Roven."
 		}
 	]
 }
