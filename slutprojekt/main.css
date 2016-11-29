@@ -1,0 +1,16 @@
+body {
+	background-color: #2c2d2d;
+	color: #ffffff;
+}
+@font-face {
+	font-family:Dangerbot;
+	src:url(dangerbot3d.woff);
+}
+h1 {
+	font-family:Dangerbot;
+/*	font-size: 35pt;*/
+	font-size: 5vw;
+}
+button {
+	color: #0000ff
+}
