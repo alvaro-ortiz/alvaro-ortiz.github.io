@@ -3,8 +3,8 @@ function myFunction () {
 	$(document).ready(function() {
 		$.getJSON("films.json", function(data) {
 			console.log(data);
-			var items = data.items.map(function (item) {
-				return item.key + ': ' + item.value;
+			var items = data.movieInfo.map(function (item) {
+				return item.filmTitle + ': ' + item.synopsis;
 			});
 			if (items.length) {
 				var content = '<li>' + items.join('</li><li>') + '</li>';
