@@ -3,15 +3,28 @@ function myFunction () {
 	$(document).ready(function() {
 		$.getJSON("films.json", function(data) {
 			console.log(data);
+			var movies = data.movieInfo;
+			console.log(movies);
+/*
 			var items = data.movieInfo.map(function (item) {
-				return item.filmTitle + ': ' + item.synopsis;
+				return formatMovie(item, item.indexOf());//item.filmTitle + ': ' + item.synopsis;
 			});
-			if (items.length) {
-				var content = '<li>' + items.join('</li><li>') + '</li>';
-				var list = $('<ul />').html(content);
+			$.each(items) {
+				var content = '"<li data-target="#carousel1" data-slide-to='
+				content += '>' + items.join('</li><li>') + '</li>';
+				var list = $('<ol />').html(content);
 				$("#film").append(list);
-			}
+			}*/
 
     	});
 	});
+}
+
+function formatMovie(item, i) {
+	var m = "<div class=\"item";
+	if (i == 0) {
+		m += " active";
+	}
+	m += "\">" + item.FilmTitle + "</div>";
+	return m;
 }
