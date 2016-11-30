@@ -4,12 +4,12 @@ function myFunction () {
 		$.getJSON("films.json", function(data) {
 			console.log(data);
 			var movies = data.movieInfo;
-			console.log(movies);
-/*
+
 			var items = data.movieInfo.map(function (item) {
 				return formatMovie(item, item.indexOf());//item.filmTitle + ': ' + item.synopsis;
 			});
-			$.each(items) {
+			console.log(items);
+/*			$.each(items) {
 				var content = '"<li data-target="#carousel1" data-slide-to='
 				content += '>' + items.join('</li><li>') + '</li>';
 				var list = $('<ol />').html(content);
