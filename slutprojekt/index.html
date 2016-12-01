@@ -1,28 +1,61 @@
 <!DOCTYPE html>
 <html>
 <head>
- <meta charset="utf-8">
- <meta http-equiv="X-UA-Compatible" content="IE=edge">
- <meta name="viewport" content="width=device-width, initial-scale=1">
-<!-- Latest compiled and minified CSS -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-<link rel="stylesheet" href="main.css">
-<script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-<script type="text/javascript" src="functions.js"></script>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<link rel="stylesheet" href="main.css">
+	<script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+	<script type="text/javascript" src="functions.js"></script>
 	<title>Upcoming Sci-Fi movies</title>
 </head>
 <body>
-<h1>Upcoming Sci-Fi movies</h1>
-
-<button onclick="myFunction()">JSON example</button>
-
-<div id="film"></div>
-
-<div id="carousel1" class="carousel slide" data-ride="carousel">
 
 
+<div id="custom-bootstrap-menu" class="navbar navbar-default " role="navigation">
+	<div class="container-fluid">
+        <div class="navbar-header"><a class="navbar-brand" href="#">YHJUST16</a>
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-menubuilder"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
+            </button>
+        </div>
+        <div class="collapse navbar-collapse navbar-menubuilder">
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="#" onclick="resetPage();">Home</a></li>
+                <li><a href="#" onclick="handleJSON();">Sci-Fi Movies</a></li>
+                <li><a href="#" onclick="alert('Under construction!');">About Me</a></li>
+                <li><a href="#" onclick="showForm();">Contact Me</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
 
+
+<div id="welcome">
+	<h1>Upcoming Sci-Fi movies</h1>
+	<img src="https://damonbraces.com/img/bethany-hamilton/emoji/DamonBraces_S016.png" style="width:350px;height:350px">
+	<br>
+	<div style="width:80%;margin:auto">
+		<h5>Welcome to my minimalistic page about movies. This is a school project where we can illustrate the techniques we have learned so far. Go ahead and click on the menu links above! Start by clicking on the Sci-Fi movies menu, which will fetch data from a database using a technique called AJAX/JSON and insert it onto the page. Clicking on the movie title will open a new tab with its IMDB page.</h5>
+	</div>
+</div>
+
+<div id="film" class="container"></div>
+
+
+<div id="formDiv">
+	<form id="contactForm" onsubmit="return false;">
+		<fieldset>
+			<label for "name">Name:</label><br>
+			<input type="text" name="name" id="name" class="inputText"><br>
+			<label for "email1">E-mail:</label><br>
+			<input type="text" name="email" id="email" class="inputText"><br>
+			<label for "message">Message:</label><br>
+			<textarea name="message" id="message"></textarea><br>
+			<input type="submit" name="send" id="send" value="Send" onclick="alert('Thank you! E-mail sent.');" class="inputSubmit">
+		</fieldset>
+	</form>
 </div>
 
 
@@ -32,14 +65,14 @@
 #01. genomföra projektet självständigt och skriva all kod själv
 #02. du ska kunna redogöra för vad du skrivit och varför
 #03. ha minst en egen html-, css- och js-fil
-04. använda Bootstrap till någon del av designen
+#04. använda Bootstrap till någon del av designen
 05. ha minst en egen media query
-06. lägga till ytterligare design i egen css utöver det som Bootstrap ger (exvis eget färgtema, andra typsnitt osv)
-07. använda jQuery till två olika saker men även ha minst en DOM-manipulering med enbart JS
-08. skapa ett stylat formulär 
+#06. lägga till ytterligare design i egen css utöver det som Bootstrap ger (exvis eget färgtema, andra typsnitt osv)
+#07. använda jQuery till två olika saker men även ha minst en DOM-manipulering med enbart JS
+#08. skapa ett stylat formulär 
 09. använda HTML5-taggar där det är semantiskt korrekt att göra så
-10. har en tydlig snygg readme på GitHub som berättar att detta är ett skolprojekt, vilken kurs, vilken skola, vilka teknologier du använt och till vad, vem som gjort projektet samt länk till din LinkedIn-profil
-11. ha en sida som är snygg på minst två skärmstorlekar: mobil och dator
-12. ha en fungerande meny som anpassas till skärmstorleken
+#10. har en tydlig snygg readme på GitHub som berättar att detta är ett skolprojekt, vilken kurs, vilken skola, vilka teknologier du använt och till vad, vem som gjort projektet samt länk till din LinkedIn-profil
+#11. ha en sida som är snygg på minst två skärmstorlekar: mobil och dator
+#12. ha en fungerande meny som anpassas till skärmstorleken
 
 -->

@@ -2,15 +2,136 @@ body {
 	background-color: #2c2d2d;
 	color: #ffffff;
 }
+
+@media screen and (max-width: 600px) {
+	body {
+		background-color: rgb(21,74,74);
+		color: #d2d2d2;
+	}
+}
+
 @font-face {
 	font-family:Dangerbot;
 	src:url(dangerbot3d.woff);
 }
+@font-face {
+	font-family:Exo2;
+	src:url(exo2.woff);
+}
 h1 {
 	font-family:Dangerbot;
 /*	font-size: 35pt;*/
-	font-size: 5vw;
+	font-size: 6vw;
+	text-align: center;
 }
 button {
 	color: #0000ff
+}
+.carousel-inner > .item > img,
+.carousel-inner > .item > a > img {
+	width: 70%;
+	margin: auto;
+}
+h3 {
+	padding-top: 0px;
+	margin-top: 0px;
+	font-weight: bolder;
+	font-family: Exo2;
+}
+h5 {
+	text-align: left;
+}
+#welcome {
+	text-align: center;
+	visibility: visible;
+	display: block;
+}
+
+#formDiv {
+	visibility: hidden;
+	display: none;
+	width: 300px;
+	color: #99cc00;
+	margin:0 auto;
+/*	position: absolute;
+	left: 50%;
+	top: 50%;
+	-webkit-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);*/
+ }
+#contactForm fieldset {
+	width: 300px;
+	padding: 20px 0px 20px 20px;
+	border: 1px solid #e08677;
+}
+#contactForm legend {
+	color: #e08677;
+/*	letter-spacing: 3px;*/
+}
+#contactForm textarea {
+	border: 1px solid #e08677;
+	padding: 5px;
+	font-size: 14px;
+	background-color: #1d1c1c;
+	height: 160px;
+	width: 250px;
+}
+#contactForm label {
+	font-size: 15px;
+	letter-spacing: 2px;
+	color: #e08677;
+}
+.inputText {
+	border: 1px solid #e08677;
+	padding: 5px;
+	font-size: 11px;
+	letter-spacing: 2px;
+	background-color: #1d1c1c;
+	width: 250px;
+}
+.inputSubmit {
+	background-color: #e08677;
+	color: #2c2d2d;
+	font-weight: bolder;
+	font-size: 15px;
+	border: 1px solid #e08677;
+}
+
+#custom-bootstrap-menu.navbar-default .navbar-brand {
+    color: #e08686;
+}
+#custom-bootstrap-menu.navbar-default {
+    font-size: 14px;
+    background-color: #26153b;
+    border-width: 1px;
+    border-radius: 4px;
+}
+#custom-bootstrap-menu.navbar-default .navbar-nav > li >a {
+    color: #f7d9d9;
+    background-color: rgba(248, 248, 248, 0);
+}
+#custom-bootstrap-menu.navbar-default .navbar-nav>li>a:hover,
+#custom-bootstrap-menu.navbar-default .navbar-nav>li>a:focus {
+    color: rgba(120, 114, 224, 1);
+    background-color: rgba(248, 248, 248, 0);
+}
+#custom-bootstrap-menu.navbar-default .navbar-nav>.active>a,
+#custom-bootstrap-menu.navbar-default .navbar-nav>.active>a:hover,
+#custom-bootstrap-menu.navbar-default .navbar-nav>.active>a:focus {
+    color: rgba(66, 46, 46, 1);
+    background-color: rgba(181, 141, 141, 1);
+}
+#custom-bootstrap-menu.navbar-default .navbar-toggle {
+    border-color: #b58d8d;
+}
+#custom-bootstrap-menu.navbar-default .navbar-toggle:hover,
+#custom-bootstrap-menu.navbar-default .navbar-toggle:focus {
+    background-color: #b58d8d;
+}
+#custom-bootstrap-menu.navbar-default .navbar-toggle .icon-bar {
+    background-color: #b58d8d;
+}
+#custom-bootstrap-menu.navbar-default .navbar-toggle:hover .icon-bar,
+#custom-bootstrap-menu.navbar-default .navbar-toggle:focus .icon-bar {
+    background-color: #26153b;
 }
