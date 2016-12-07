@@ -135,3 +135,33 @@ h5 {
 #custom-bootstrap-menu.navbar-default .navbar-toggle:focus .icon-bar {
     background-color: #26153b;
 }
+
+.popup {
+	position: absolute;
+	background: rgba(38, 21, 59, 0.8);
+	visibility: hidden;
+	opacity: 0;
+	margin: auto;
+	left: 50%;
+	top: 50%;
+	-webkit-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+	padding: 10px;
+}
+
+.popup:target {
+	visibility: visible;
+	opacity: 1;
+}
+
+.popup .close {
+	position: absolute;
+	right: 10px;
+	font-size: 20px;
+	text-decoration: none;
+	color: #e08686;
+}
+
+.popup .close:hover {
+	color: #592146;
+}
